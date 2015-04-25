@@ -6,9 +6,19 @@ $(document).ready(function () {
     $("#matrix").append($newdiv);
   };
 
-  $(".square").hover(function() {
+  //Have these new squares change multiple colors on hover over
+    $(".square").mouseenter(function() {
+      var opa = $(this).css("opacity");
+
+        if (opa <1)
+        {
+          $(this).css("opacity",opa * 2);
+        }
+      });
+
+  /*$(".square").hover(function() {
     $(this).addClass("hover_color");
-  });
+  });*/
 });
 
 
@@ -31,11 +41,17 @@ function newGrid(){
 // Set the square div width and height
   $('.square').css('width',newWH);
   $('.square').css('height',newWH);
+  $('.square').css('background-color','black');
+  $('.square').css('opacity',0.1);
 
 //Have these new squares change multiple colors on hover over
-  $(".square").hover(function() {
-    $(this).addClass("hover_color");
-  });
+  $(".square").mouseenter(function() {
+    var opa = $(this).css("opacity");
 
+      if (opa <1)
+      {
+        $(this).css("opacity",opa * 2);
+      }
+    });
 
 };
