@@ -1,5 +1,7 @@
 $(document).ready(function () {
+
   var $newdiv = "<div class='square'> </div>";
+
   for (var i=0; i < 256; i++) {
     $("#matrix").append($newdiv);
   };
@@ -8,6 +10,7 @@ $(document).ready(function () {
     $(this).addClass("hover_color");
   });
 });
+
 
 function newGrid(){
 //ask the user what the size of the new grid should be
@@ -22,11 +25,17 @@ function newGrid(){
     $("#matrix").append("<div class='square'> </div>");
   };
 
-  //log the width and height of the new squares
-      var newWH = 600 / newSize;
+//log the width and height of the new squares
+  var newWH = 600 / newSize;
 
 // Set the square div width and height
   $('.square').css('width',newWH);
   $('.square').css('height',newWH);
 
-}
+//Have these new squares change multiple colors on hover over
+  $(".square").hover(function() {
+    $(this).addClass("hover_color");
+  });
+
+
+};
