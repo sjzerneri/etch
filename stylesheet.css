@@ -1,3 +1,9 @@
+.matrix {
+  background-color:blue;
+  height:800px;
+  width:800px;
+}
+
 .square {
   background-color:red;
   height:50px;

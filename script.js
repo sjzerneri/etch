@@ -1,12 +1,8 @@
+var squares = prompt("How Many Squares Do You Want?");
+
 $(document).ready(function () {
-
-
-
-  $(".grid").append("<p>Hello</p>");
-
-  $(".grid").append("<p>What It Do</p>");
-
-
-
-
+  var $newdiv = "<div class='square'> </div>";
+  for (var i=0; i < squares; i++) {
+    $(".matrix").append($newdiv);
+  }
 });
