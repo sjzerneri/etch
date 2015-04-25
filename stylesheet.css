@@ -1,16 +1,24 @@
-.matrix {
-  height:1120px;
-  width:1120px;
+#matrix {
+  height:600px;
+  width:600px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:20px;
 }
 
 .square {
-  background-color:red;
-  height:50px;
-  width:50px;
-  display:inline-block;
-  margin:10px;
+  background-color:white;
+  height:37.5px;
+  width:37.5px;
+  float:left;
+  border:1px solid black;
 }
 
 .hover_color {
   background-color:black;
+}
+
+button {
+  margin-top:10px;
+  margin-left:47%;
 }
