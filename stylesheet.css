@@ -11,7 +11,7 @@
   height:37.5px;
   width:37.5px;
   float:left;
-  border:1px solid black;
+  outline:1px solid black;
 }
 
 .hover_color {
