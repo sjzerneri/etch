@@ -41,7 +41,7 @@ function newGrid(){
 // Set the square div width and height
   $('.square').css('width',newWH);
   $('.square').css('height',newWH);
-  $('.square').css('background-color','black');
+  $('.square').css('background-color','#433669');
   $('.square').css('opacity',0.1);
 
 //Have these new squares change multiple colors on hover over
