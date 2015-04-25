@@ -1,11 +1,12 @@
 .matrix {
-  background-color:blue;
-  height:800px;
-  width:800px;
+  height:1120px;
+  width:1120px;
 }
 
 .square {
   background-color:red;
   height:50px;
   width:50px;
+  display:inline-block;
+  margin:10px;
 }

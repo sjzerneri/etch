@@ -1,4 +1,4 @@
-var squares = prompt("How Many Squares Do You Want?");
+var squares = prompt("How Many Rows Do You Want?");
 
 $(document).ready(function () {
   var $newdiv = "<div class='square'> </div>";
